@@ -141,8 +141,11 @@ class BOM:
 
     @staticmethod
     def read_ignorefile(ignorefile):
-        with open(ignorefile, 'r') as f:
-            return f.read().splitlines()
+        try:
+            with open(ignorefile, 'r') as f:
+                return f.read().splitlines()
+        except FileNotFoundError:
+            return []
 
     def write_file(self):
         wb = Workbook()
