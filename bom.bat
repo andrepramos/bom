@@ -1,1 +1,1 @@
-%homedrive%%homepath%\.virtualenvs\make-bom-sboSKeqI\Scripts\python.exe %homedrive%%homepath%\Development\make-bom\bom.py
+%homedrive%%homepath%\.virtualenvs\make-bom-sboSKeqI\Scripts\python.exe %homedrive%%homepath%\Development\make-bom\bom.py %*
